@@ -1,4 +1,7 @@
 package com.codegym.repository;
 
-public class ICustomerRepository {
+import com.codegym.model.Customer;
+
+public interface ICustomerRepository {
+    boolean saveWithStoredProcedure(Customer customer);
 }
